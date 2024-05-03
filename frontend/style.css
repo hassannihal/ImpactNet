@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f5f5f5; /* Body background will be visible between the cards */
+}
+
+.container {
+    max-width: 960px; /* Adjusted for better spacing */
+    margin: auto;
+    padding: 0; /* No padding to make the container transparent */
+    background: transparent; /* Transparent background for the container */
+    text-align: center; /* Center the main title */
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px; /* Spacing after the title */
+}
+
+.forms-container {
+    display: flex;
+    justify-content: space-between; /* Space between the forms */
+    gap: 30px; /* Visible gap between the cards */
+}
+
+.input-form {
+    width: calc(50% - 15px); /* Adjusted width accounting for the gap */
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+h2 {
+    color: #333;
+    text-align: center;
+    margin: 0 0 20px; /* Centered heading with space below */
+}
+
+input[type="file"],
+input[type="text"] {
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 100%; /* Full width of the form card */
+    box-sizing: border-box;
+    height: 40px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    height: 40px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#message {
+    margin-top: 20px;
+    text-align: center;
+}
+/* Add to the current CSS */
+.forms-container + .forms-container {
+    margin-top: 40px; /* Spacing between sections */
+}
+/* Continue from the existing CSS and add the following */
+
+.section-title {
+    color: #333;
+    text-align: center;
+    width: 100%; /* Full width to center the text */
+    margin: 40px 0 20px; /* Spacing above and below the title */
+    font-size: 1.5em; /* If you want a different size than h2 */
+}

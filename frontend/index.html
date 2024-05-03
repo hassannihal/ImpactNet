@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF and URL Processor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Extract and process insights (Internal Users)</h1>
+        <div class="forms-container">
+            <form id="pdfForm" enctype="multipart/form-data" class="input-form">
+                <h2>Via PDF</h2>
+                <input type="file" id="pdfFile" name="pdf" accept="application/pdf">
+                <button type="submit">Upload PDF</button>
+            </form>
+            <form id="urlForm" class="input-form">
+                <h2>Via URL</h2>
+                <input type="text" id="urlInput" name="url" placeholder="Enter URL">
+                <button type="submit">Submit URL</button>
+            </form>
+        </div>
+        
+        <!-- New title for the next section -->
+        <h2 class="section-title">Analyse Data (External Users)</h2> <!-- This is the new title -->
+
+        <!-- New section for deep dive and chat with insights -->
+        <div class="forms-container">
+            <div class="input-form">
+                <h2>Deep dive with Metabase</h2>
+                <button type="button">Proceed</button>
+            </div>
+            <div class="input-form">
+                <h2>Chat with insights</h2>
+                <button type="button">Proceed</button>
+            </div>
+        </div>
+        <div id="message"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
