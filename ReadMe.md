@@ -1,6 +1,6 @@
 # ImpactNet
 
-ImpactNet is a cutting-edge analytics platform that transforms publicly available Indian government data into actionable insights. Designed to streamline the decision-making process for Corporate Social Responsibility (CSR) initiatives, this system leverages advanced data visualization tools and an intuitive chatbot interface, empowering users to explore and interact with complex datasets efficiently.
+ImpactNet is a proof of concept analytics platform that transforms publicly available Indian government data into actionable insights. Designed to streamline the decision-making process for Corporate Social Responsibility (CSR) initiatives, this system leverages advanced data visualization tools and an intuitive chatbot interface, empowering users to explore and interact with complex datasets efficiently.
 
 ## Contents
 1. **Problem Description**
@@ -28,12 +28,12 @@ The necessary datasets are scattered, primarily available through data.gov.in AP
 ImpactNet elegantly addresses these challenges through a robust, multi-faceted approach:
 ### Data Processing Layer (ETL: Extract-Transform-Load)
 1. **Automated Data Aggregation:** Fetches and processes data from data.gov.in, creating structured data tables for subsequent analysis within the Metabase interface.
-2. **Insight Extraction:** Converts insights from government-issued PDFs into digestible formats, ready for integration with our proprietary Retrieval Augmented Generation (RAG) system.
+2. **Insight Extraction:** Converts insights from government-issued PDFs into digestible formats, ready for integration with a Retrieval Augmented Generation (RAG) system.
 
 ### Data Visualization and Insight Generation Layer
 1. **Dynamic Data Visualization:** Users can interact with data through the user-friendly Metabase interface or execute SQL queries to delve deeper into the datasets. This functionality is complemented by the ability to generate comprehensive reports and dashboards.
 ![Flow Diagram](/Metabase.jpg)
-2. **Intelligent Query Handling Chatbot:** Utilizes a state-of-the-art RAG system, powered by Gemini 1.5 Pro, to answer queries regarding government data. The system provides precise answers with relevant textual information and graphical representations.
+2. **Intelligent Query Handling Chatbot:** Utilizes simple RAG system, powered by Gemini 1.5 Pro, to answer queries regarding government data. The system provides precise answers with relevant textual information and graphical representations.
 ![Flow Diagram](/chatbot.jpg)
 ## Impact of this project
 ### Business Value
@@ -70,7 +70,6 @@ Following data ingestion, this module leverages the power of Google Cloud SQL an
 This interactive chatbot utilizes a custom Retrieval Augmented Generation (RAG) system, facilitating an intuitive query experience for users. It's designed for those requiring a more guided approach to explore data insights through natural language interactions.
 
 ## Technical Features & Capabilities
-- **Automated Data Schema Management**: Dynamically manages database schemas to accommodate varying API responses.
 - **Cloud SQL Integration**: Ensures scalable and secure data storage and retrieval within Google Cloud SQL.
 - **Metabase Utilization**: Facilitates sophisticated data analysis, enabling users to create dashboards and generate comprehensive reports.
 - **Interactive Q&A Interface**: Features a Streamlit-based frontend for intuitive interaction with data using natural language queries.
@@ -132,8 +131,8 @@ We encourage you to explore the project and provide feedback on features and per
 ## Scope Limitation
 ImpactNet currently focuses on data relevant to Higher Education in India. To expand its utility, additional datasets such as those from healthcare, poverty alleviation, and environmental sectors can be incorporated by providing their respective URLs or uploading their PDFs.
 
-## Future Scope
-The roadmap for ImpactNet includes several exciting enhancements:
+## Potential Future Scope
+The roadmap for ImpactNet includes:
 - **Broadening Data Sources**: Incorporating a wider array of data related to CSR, including sectors like healthcare, poverty, and environmental sustainability.
 - **Enhanced Interactivity**: Integrating the stream content generation capabilities of Gemini 1.5 Pro to enhance user interactions.
 - **Usage Controls**: Introducing rate limits to prevent misuse and ensure fair access to all users.
@@ -141,4 +140,4 @@ The roadmap for ImpactNet includes several exciting enhancements:
 - **Advanced Diagnostics**: Developing sophisticated error logging mechanisms to facilitate deeper analysis of issues and provide root cause analysis.
 
 ## License
-Till the completion of Google AI Hackathon, ImpactNet will be available under a special license designed to allow use and modification for hackathon moderators while restricting replication and distribution. Post-hackathon completion, the project will revert to a more restrictive licensing model, details of which will be specified in the LICENSE file.
+Till the completion of Google AI Hackathon, ImpactNet will be available under a special license designed to allow use and modification for hackathon moderators while restricting replication and distribution.
